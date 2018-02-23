@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/getDateArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/getDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Date dd-mm-yyyy" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/getTimeArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getDateArea">
+
+        <EditText
+            android:id="@+id/getTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Time HH:MM:am/pm" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/getDetailsArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getTimeArea">
+        <EditText
+            android:id="@+id/getDetails"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:hint="Enter Details"
+            android:gravity="top"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/getAllBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getDetailsArea"
+        android:text="Add"
+        android:background="@color/colorGreen"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginTop="10dip"/>
+</RelativeLayout>
